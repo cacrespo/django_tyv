@@ -6,7 +6,7 @@
 
 `git clone git@github.com:<TU-USUARIO>/django_tyv.git`
 
-3. Ingresa en la carpeta que git clone creó en tu computadora:
+3. Ingresa en la carpeta que `git clone` creó en tu computadora:
 
 `cd django_tyv/`
 
@@ -14,12 +14,8 @@
 
 `git remote add upstream https://github.com/cacrespo/django_tyv.git`
 
-5. (es opcional, pero recomendamos hacerlo) Crea un entorno virtual y actívalo:
+1. [Crea un entorno virtual y actívalo](faq.md#Paso-a-paso-para-crear-un-entorno-virtual) (es opcional, pero recomendamos hacerlo).
 
-``python -m venv env
-source env/bin/activate   # macOS y Linux
-env\Scripts\activate.bat  # Windows``
-
-6. Instala los requerimientos del proyecto:
+2. Instala los requerimientos del proyecto:
 
 `pip install -r requirements.txt`
