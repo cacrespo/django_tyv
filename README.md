@@ -1,7 +1,8 @@
 ## django_tyv
 
 
-# Paso a paso para crear un entorno virtual (https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
+# Paso a paso para crear un entorno virtual
+(https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 Linux:
 * Correr, en la terminal: `python3 -m pip install --user virtualenv`
 * Navegar hasta la carpeta donde se desea crear el entorno virtual, y correr `python3 -m venv env`
