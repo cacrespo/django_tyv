@@ -2,7 +2,7 @@
 ## No puedo resolver un problema. ¿Qué hago?
 Preguntar en el chat!
 
-## ¿Cómo creaer un entorno virtual?
+## ¿Cómo crear un entorno virtual?
 (https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
 Linux:
