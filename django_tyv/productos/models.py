@@ -1,6 +1,5 @@
 from django.db import models
 from categorias.models import Categoria
-# Create your models here.
 
 
 class Producto(models.Model):
