@@ -1,39 +1,26 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pañalera T & V</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon/favicon.ico">
-    <link rel="STYLESHEET" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://kit.fontawesome.com/74043a8a0d.js" crossorigin="anonymous"></script>
-</head>
+{% include "header.html" %}
 
 <body>
-    <div id="encabezado"></div>
-
     <main>
         <section>
             <p> No queremos chatbots ❌🤖 <br>
                 Mereces alguien que te escuche y responda 😘 <br><br>
                 <strong>🥳 Escribinos, llamanos o mandanos audio <br>
-                <a href="https://api.whatsapp.com/send?phone=5491139562940"><i class="fab fa-whatsapp"></i> 11 39 56 29 40</a></strong>
+                    <a href="https://api.whatsapp.com/send?phone=5491139562940"><i class="fab fa-whatsapp"></i> 11 39 56
+                        29 40</a></strong>
                 <br><b> Envíos sin cargo </b>
             </p>
-                <hr>
+            <hr>
         </section>
         <section class="oferta">
             <h1>🔥🔥🔥 Destacados de la semana! </h1>
-                <img src="/images/semanales/vaita_02.png" alt="vaita">
-                <img src="/images/semanales/vaita_01.png" alt="vaita">
-                <p> Trajimos lo último de vaíta </p>
+            <!-- producto destacado por el admin -->
+            <p> Producto + Precio + Mensaje </p>
         </section>
         <hr>
+        <section>
+            <!-- listado de productos $ precios -->
+        </section>
         <section>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.4527588469896!2d-58.650535999999995!3d-34.592711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6a10e7c02378e0f!2zUGHDsWFsZXJhIFQmVg!5e0!3m2!1sen!2sar!4v1619146864909!5m2!1sen!2sar"
@@ -42,7 +29,10 @@
 
         </section>
     </main>
-    <footer></footer> <!-- generamos el footer vía js -->
+    <footer>
+        <!-- generar footer  -->
+    </footer>
 </body>
 <script src="js/scripts.js"></script>
+
 </html>
