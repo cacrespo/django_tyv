@@ -12,16 +12,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
     <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon/favicon.ico">
     <link rel="STYLESHEET" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/74043a8a0d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    {% block header %}
+    {% endblock %}
+
     <div class="sticky">
         <header class="animate__animated animate__bounce animate__delay-2s">
-            <h1><a href="index.html"> Pañalera T & V </a></h1>
+            <h1> Pañalera T & V </h1>
             <h2>calidad, precios y mejor atención</h2>
 
         </header>
         </div>
+
+    {% block main %}
+    {% endblock %}
+
+    <footer>
+        <p>J. Bustamante y Guevara 2262, Hurlingham <br> Hecho con mucho ❤️</p>
+    </footer>
 </body>
+</html>
