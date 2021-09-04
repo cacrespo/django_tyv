@@ -1,0 +1,187 @@
+:root {
+    /* Paleta de colores  */
+    --color1: #ce6b59;
+    --color2: #d79264;
+    --color3: #eec58f;
+    --color4: #f8eec6;
+    --color5: #f8efea;
+    }
+
+* {font-family: 'Epilogue', sans-serif;}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+body {
+    background-color: var(--color5);
+
+    color : var(--color1);
+
+    margin: 1vw 10vw 1vw 10vw;
+
+    box-shadow: 0 0 20px var(--color3);
+
+    }
+
+div.sticky {
+        position: sticky;
+        top: 0;
+}
+
+header {
+    background-image : linear-gradient(var(--color3),var(--color5));
+
+    font-family: 'Anton', sans-serif;
+
+    }
+
+header h1 {
+    font-size: max(3vw, 20px);
+
+    font-weight: 900;
+
+    text-decoration : none;
+
+    padding: 2ch 5ch 0ch 5ch;
+
+    margin: 0ch;
+
+    text-align : center;
+
+    }
+
+header h2 {
+    font-size: max(1.5vw, 14px);
+
+    text-decoration : none;
+
+    /* padding: 1vw 5vw 1vw; */
+
+    margin: 0ch;
+
+    text-align : center;
+
+    }
+
+header > p {
+        font-size: max(2vw, 17px);
+
+        font-weight: bold;
+
+        margin: 0;
+
+        padding: 0.05vw;
+
+        text-align : center;
+
+        }
+
+section {
+    font-size: max(14px, 1.5vw);
+
+    margin-top: 1vw;
+
+    margin-bottom: 1vw;
+
+    text-align : center    ;
+
+        }
+
+
+nav {
+    font-size: max(1vw, 10px);
+    text-align: center;
+    margin: 0;
+    padding: 0.5%;
+}
+
+main {
+    text-align: center;
+    padding: 0.5vw;
+}
+
+footer {
+    padding: 1%;
+    text-align: center;
+    font-size: max(1vw, 14px);
+
+}
+
+.oferta {
+    transition-property: all;
+    transform-style: flat;
+    transition-duration: 2s;
+    padding: 1% 10% 1% 10%;
+}
+
+.oferta:hover {
+
+    background: var(--color2); color: var(--color5);
+
+}
+
+form {
+    padding: 1%;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+label + input {
+    width: 100%;
+    display: inline-block;
+  }
+
+#contenedor {
+border: black;
+display: flex;
+flex-direction: column;
+padding: 1%;
+align-content: flex-end;
+
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+   }
+
+.item > section {
+padding: 5%;
+width: 90%;
+justify-content:space-evenly;
+display: inline-flex;
+
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 20%;
+    display: inline-flex;
+}
+
+.card {
+    font-size: 90%;
+    background-color: var(--color4);
+}
+
+iframe {
+    margin: 1%;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        margin: 3vw 3vw 3vw 3vw;
+    }
+
+    section p strong {
+    font-size: max(2.5vw, 18px);
+    padding: 2vw;
+    text-align : center    ;
+    }
+
+}
