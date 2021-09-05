@@ -41,4 +41,4 @@ git push origin nuevo-header
 
 ---
 ### A tener en cuenta :point_left:
-Es muy importante [mantener actualiza](faq.md#cómo-mantengo-actualizada-mi-copia-del-repositorio) tu copia local!
+Es muy importante [mantener actualizada](faq.md#cómo-mantengo-actualizada-mi-copia-del-repositorio) tu copia local!
