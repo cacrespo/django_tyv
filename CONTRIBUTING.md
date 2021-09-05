@@ -38,3 +38,7 @@ git push origin nuevo-header
 ```
 
 9. Desde el sitio de Github realiza el PR!
+
+---
+### A tener en cuenta :point_left:
+Es muy importante [mantener actualiza](faq.md#cómo-mantengo-actualizada-mi-copia-del-repositorio) tu copia local!
