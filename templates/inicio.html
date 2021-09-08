@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block main %}
 
+{% block main %}
 <main>
     <section>
         <p> <strong>🥳 Escribinos, llamanos o mandanos audio <br>
@@ -16,22 +16,43 @@
         <p> Producto + Precio + Mensaje </p>
     </section>
     <hr>
-    <section>
-        <h2> Listado de productos + precios </h2>
-        <!-- listado de productos $ precios -->
-        <p> Producto + Precio </p>
-        <p> Producto + Precio </p>
-        <p> Producto + Precio </p>
-        <p> Producto + Precio </p>
-    </section>
-    <hr>
-    <section>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.4527588469896!2d-58.650535999999995!3d-34.592711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6a10e7c02378e0f!2zUGHDsWFsZXJhIFQmVg!5e0!3m2!1sen!2sar!4v1619146864909!5m2!1sen!2sar"
-            style="height: 50%; width: 75%;" scrolling="No" loading="lazy">
-        </iframe>
-
-    </section>
 </main>
+
+{% endblock %}
+
+{% block minor %}
+<section>
+    <h3> Listado de productos </h3>
+    <!-- listado de productos $ precios -->
+    <table>
+        <tr>
+            <th>Categoría</th>
+            <th>Marca</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            {% for product in products%}
+            <tbody>
+                <tr>
+                    <td>{{product.categoria}}</td>
+                    <td>{{product.marca}}</td>
+                    <td>{{product.nombre}} {{product.tamano}}</td>
+                    <td>$ {{product.precio_unitario}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+    </table>
+
+</section>
+
+{% endblock %}
+
+{% block footer %}
+<section>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.4527588469896!2d-58.650535999999995!3d-34.592711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6a10e7c02378e0f!2zUGHDsWFsZXJhIFQmVg!5e0!3m2!1sen!2sar!4v1619146864909!5m2!1sen!2sar"
+        style="height: 50%; width: 75%;" scrolling="No" loading="lazy">
+    </iframe>
+
+</section>
 
 {% endblock %}
