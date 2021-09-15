@@ -1,5 +1,4 @@
-# from django.shortcuts import render
-# linea 1 comentada para evitar error en test, hasta que se use
+from django.shortcuts import render
 from negocio.models import Producto
 
 
