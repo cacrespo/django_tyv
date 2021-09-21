@@ -33,5 +33,8 @@ class Producto(models.Model):
 class Venta(models.Model):
     item = models.ForeignKey(Producto, on_delete=models.CASCADE)
     cantidad = models.IntegerField(default=0, null=True, blank=True)
-    precio = models.DecimalField(default=0.0, decimal_places=2, max_digits=6)
+    precio = models.DecimalField(
+        default=0.0,
+        decimal_places=2,
+        max_digits=6)
     fecha = models.TimeField(timezone.now)
