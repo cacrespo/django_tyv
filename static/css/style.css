@@ -1,10 +1,10 @@
 :root {
     /* Paleta de colores  */
-    --color1: #ce6b59;
-    --color2: #d79264;
-    --color3: #eec58f;
-    --color4: #f8eec6;
-    --color5: #f8efea;
+    --color1: #59cece;
+    --color2: #64b3d7;
+    --color3: #8fadee;
+    --color4: #cbc6f8;
+    --color5: #ebeaf8;
 }
 
 * {font-family: 'Epilogue', sans-serif;}
@@ -13,11 +13,14 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
+html {
+    background-color: white;
+}
 
 body {
     background-color: var(--color5);
-    color : var(--color1);
-    margin: 1vw 10vw 1vw 10vw;
+    /* color : var(--color1); */
+    margin: 2vw 5vw 1vw;
     box-shadow: 0 0 20px var(--color3);
 
 }
@@ -29,7 +32,6 @@ div.sticky {
 
 header {
     background-image : linear-gradient(var(--color3),var(--color5));
-    font-family: 'Anton', sans-serif;
 }
 
 header h1 {
@@ -43,6 +45,7 @@ header h1 {
 
 header h2 {
     font-size: max(1.5vw, 14px);
+    font-weight: 600;
     text-decoration : none;
     padding: 0vw 1vw 1vw;
     margin: 0ch;
@@ -50,15 +53,15 @@ header h2 {
 }
 
 header > p {
-        font-size: max(2vw, 17px);
-        font-weight: bold;
+        font-size: max(1vw, 12px);
+        font-weight: 300;
         margin: 0;
         padding: 0.03vw;
         text-align : center;
 }
 
 section {
-    font-size: max(14px, 1.5vw);
+    font-size: max(1.5vw, 10px);
     margin-top: 0.5vw;
     margin-bottom: 1vw;
     text-align : center;
@@ -108,7 +111,7 @@ iframe {
     margin: 1%;
 }
 
-
+/* 
 @media only screen and (max-width: 500px) {
     body {
         margin: 3vw 3vw 3vw 3vw;
@@ -118,6 +121,6 @@ iframe {
     font-size: max(2.5vw, 18px);
     padding: 2vw;
     text-align : center;
-    }
+    } */
 
 }
