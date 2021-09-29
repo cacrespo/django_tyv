@@ -32,6 +32,7 @@ div.sticky {
 
 header {
     background-image : linear-gradient(var(--color3),var(--color5));
+    padding-bottom: 1%;
 }
 
 header h1 {
