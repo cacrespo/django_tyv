@@ -40,7 +40,7 @@ header h1 {
     text-decoration : none;
     padding: 2ch 5ch 0ch 5ch;
     margin: 0ch;
-    text-align : center;
+    text-align : left;
 }
 
 header h2 {
@@ -109,6 +109,21 @@ tr:nth-child(even) {
 
 iframe {
     margin: 1%;
+}
+
+.column {
+    flex: 65%;
+}
+
+.sub {
+    text-align: right;
+    padding: 1vw;
+    font-size: max(1.3vw, 10px);
+    flex: 35%;
+}
+
+.flex-container {
+    display: flex;
 }
 
 /* 
