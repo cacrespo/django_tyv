@@ -40,17 +40,15 @@ class Venta(models.Model):
         null=True,
         decimal_places=2,
         max_digits=6)
-    monto= models.DecimalField(
+    monto = models.DecimalField(
         blank=True,
         null=True,
         decimal_places=2,
         max_digits=6)
     fecha = models.TimeField(default=datetime.now)
 
-
     def __str__(self):
         return str(self.item)
-
 
     def guardar(self):
         self.save_date = timezone.now()
