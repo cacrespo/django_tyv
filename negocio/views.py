@@ -8,24 +8,24 @@ def cargaCategoria(request):
     form = CargaCategoria(request.POST or None)
     context = {'form': form}
     if form.is_valid():
-        categoria = form.save(commit = False)
+        categoria = form.save(commit=False)
         # Acá se puede hacer alguna modificacion a los datos
         # ingresados en el form
         categoria.save()
         return redirect(cargaCategoria)
-    return render(request,'cargarCategoria.html',context)
+    return render(request, 'cargarCategoria.html', context)
 
 
 def cargarProducto(request):
     form = CargaProducto(request.POST or None)
     context = {'form': form}
     if form.is_valid():
-        producto = form.save(commit = False)
+        producto = form.save(commit=False)
         # Acá se puede hacer alguna modificacion a los datos
         # ingresados en el form
         producto.save()
         return redirect(cargarProducto)
-    return render(request,'cargarProducto.html',context)
+    return render(request, 'cargarProducto.html', context)
 
 
 def cargaVenta(request):
@@ -38,7 +38,7 @@ def cargaVenta(request):
         venta.monto = venta.precio*venta.cantidad
         venta.save()
         return redirect(cargaVenta)
-    return render(request, 'cargarVenta.html',context)
+    return render(request, 'cargarVenta.html', context)
 
 
 def administracion(request):
@@ -46,9 +46,9 @@ def administracion(request):
 
 
 def logueado(request):
-    programadores = Group.objects.get(name = "Programadores").user_set.all()
-    propietarios = Group.objects.get(name = "Propietarios").user_set.all()
-    clientes = Group.objects.get(name = "Clientes").user_set.all()
+    programadores = Group.objects.get(name="Programadores").user_set.all()
+    propietarios = Group.objects.get(name="Propietarios").user_set.all()
+    clientes = Group.objects.get(name="Clientes").user_set.all()
     usuario = request.user
     print(usuario)
     print(programadores)

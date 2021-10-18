@@ -3,21 +3,21 @@ from django.contrib import admin
 
 
 class ProductoAdmin(admin.ModelAdmin):
-    list_display=[
-        'marca', 
-        'nombre', 
-        'tamano', 
-        'principal', 
-        'destacado', 
-        'precio_unitario', 
+    list_display = [
+        'marca',
+        'nombre',
+        'tamano',
+        'principal',
+        'destacado',
+        'precio_unitario',
         'categoria'
         ]
-    list_editable=[
-        'nombre', 
-        'tamano', 
-        'principal', 
-        'destacado', 
-        'precio_unitario', 
+    list_editable = [
+        'nombre',
+        'tamano',
+        'principal',
+        'destacado',
+        'precio_unitario',
         'categoria'
         ]
 

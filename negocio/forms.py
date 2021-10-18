@@ -12,12 +12,12 @@ class CargaProducto(forms.ModelForm):
     class Meta:
         model = Producto
         fields = [
-            'categoria', 
-            'nombre', 
-            'marca', 
-            'tamano', 
-            'principal', 
-            'destacado', 
+            'categoria',
+            'nombre',
+            'marca',
+            'tamano',
+            'principal',
+            'destacado',
             'precio_unitario'
             ]
 
