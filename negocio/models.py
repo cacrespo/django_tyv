@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.db import models
 from django.utils import timezone
 
@@ -10,7 +11,7 @@ class Categoria(models.Model):
 
 
 class Producto(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
     nombre = models.CharField(max_length=200)
     marca = models.CharField(max_length=100)
@@ -31,10 +32,26 @@ class Producto(models.Model):
 
 
 class Venta(models.Model):
+    id = models.AutoField(primary_key=True)
     item = models.ForeignKey(Producto, on_delete=models.CASCADE)
     cantidad = models.IntegerField(default=0, null=True, blank=True)
     precio = models.DecimalField(
-        default=0.0,
+        blank=True,
+        null=True,
         decimal_places=2,
         max_digits=6)
-    fecha = models.TimeField(timezone.now)
+    monto= models.DecimalField(
+        blank=True,
+        null=True,
+        decimal_places=2,
+        max_digits=6)
+    fecha = models.TimeField(default=datetime.now)
+
+
+    def __str__(self):
+        return str(self.item)
+
+
+    def guardar(self):
+        self.save_date = timezone.now()
+        self.save()

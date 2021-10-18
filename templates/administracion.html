@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion: {% block title %} {% endblock %} </title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon/favicon.ico">
+    <link rel="STYLESHEET" href="{% static 'css/style.css' %}">
+</head>
+<header>
+    <h1>BIENVENIDO A LA ADMINISTRACION DEL SITIO</h1>
+    <H2>Desde aqui podrá cargar nuevos productos, crear nuevas categorias, o registrar sus ventas</H2>
+</header>
+<body>
+    <nav>
+        <a href="/carga_producto"><button>Productos</button></a>
+        <a href="/carga_categoria"><button>Categorias</button></a>
+        <a href="/carga_venta"><button>Ventas</button></a>
+    </nav>
+    {% block main %}
+    {% endblock %}
+</body>
+</html>
