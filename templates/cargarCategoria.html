@@ -1,0 +1,12 @@
+{% extends "administracion.html" %}
+{% block title %}
+Cargar categoria
+{% endblock %}
+
+{% block main %}
+<form action='carga_categoria' method="POST">
+    {% csrf_token %} 
+    {{ form.as_p }}
+    <input type="submit" value="cargar">
+</form>
+{% endblock %}

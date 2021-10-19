@@ -1,0 +1,12 @@
+{% extends "administracion.html" %}
+{% block title %}
+Cargar venta
+{% endblock %}
+
+{% block main %}
+<form action='carga_venta' method="POST">
+    {% csrf_token %} 
+    {{ form.as_p }}
+    <input type="submit" value="cargar">
+</form>
+{% endblock %}
