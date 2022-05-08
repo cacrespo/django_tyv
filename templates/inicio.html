@@ -11,9 +11,9 @@ Pañalera T & V
         <h2>🔥🔥🔥 Destacado de la semana! </h2>
         <!-- producto destacado por el admin -->
         {% for product in products %}
-            {% if product.principal %}
-                <p> {{product.marca}} {{product.nombre}} {{product.tamano}} <br>
-                $ {{product.precio_unitario}}</p>
+            {% if product.destacado %}
+                <p> {{product.marca}} {{product.nombre}} {{product.tamano}}  <br>
+                    $ {{product.precio_unitario}} </p>
             {% endif %}
         {% endfor %}
     </section>
@@ -33,14 +33,16 @@ Pañalera T & V
                 <th>Marca</th>
                 <th>Nombre</th>
                 <th>Precio</th>
-                {% for product in products%}
-                <tbody>
-                    <tr>
-                        <td>{{product.categoria}}</td>
-                        <td>{{product.marca}}</td>
-                        <td>{{product.nombre}} {{product.tamano}}</td>
-                        <td>$ {{product.precio_unitario}}</td>
-                    </tr>
+                {% for product in products %}
+                    {% if product.oferta %}
+                    <tbody>
+                        <tr>
+                            <td>{{product.categoria}} {{product.destacado}} {{product.oferta}} </td>
+                            <td>{{product.marca}}</td>
+                            <td>{{product.nombre}} {{product.tamano}}</td>
+                            <td>$ {{product.precio_unitario}}</td>
+                        </tr>
+                        {% endif %}
                     {% endfor %}
                 </tbody>
         </table>
